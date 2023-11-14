@@ -13,11 +13,40 @@
 </head>
 <body>
     <header>
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-3 ps-0 ai-center">
+                    <img src="./img/logo.svg" alt="logo" class="logo fs-6 pt-1">
+                    <img src="./img/mobile-logo.png" alt="logo-mobile" class="logo-mobile width-50">
+                </div>
+                <div class="col-6 pt-1">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text border border-end-0 bg-grey" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass" style="color: #545a64;"></i></span>
+                        <input type="text" class="form-control border border-start-0 bg-grey" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Prova a cercare: Lezioni di Laravel" aria-describedby="addon-wrapping">
+                      </div>
+                </div>
+                <div class="col-3 d-flex ai-center justify-content-end">
+                        <i class="fa-solid fa-list-ul header-end" style="color: #393838;"></i>
+                        <i class="fa-solid fa-circle-question px-3 header-end" style="color: #393838;"></i>
+                        <i class="fa-solid fa-ellipsis-vertical header-end" style="color: #393838;"></i>
+                        <div class="dropdown ps-2">
+                            <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell" style="color: #ff8f00;"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><button class="dropdown-item" type="button">Profilo</button></li>
+                              <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                              <li><button class="dropdown-item" type="button">Logout</button></li>
+                            </ul>
+                          </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <div class="sidebar">
             <div class="col-12 p-3">
-                <div >
+                <div>
                     <i class="fa-solid fa-house" style="color: #ffffff;"></i>
                     <span class="text-white ps-1 font-size-12">Home</span>
                 </div>
@@ -30,9 +59,11 @@
                     <span class="text-white ps-1 font-size-12">Signals</span>
                 </div>
             </div>
-            <div class="col-12 p-3 ai-center">
-                <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
-                <span class="text-white ps-2 font-size-12">Admin</span>
+            <div class="col-12 p-3">
+                <div class="ai-center">
+                    <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+                    <span class="text-white ps-2 font-size-12">Admin</span>
+                </div>
             </div>
         </div>
     </main>

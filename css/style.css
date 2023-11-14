@@ -8,7 +8,7 @@ body{
 }
 header{
     height: 50px;
-    background-color: aqua;
+    background-color: #F8F9FA;
 }
 main{
     height: calc(100vh - 50px);
@@ -25,14 +25,25 @@ main{
 }
 
 .content{
-    background-color: azure;
+   
 }
-
+.logo-mobile{
+    display: none;
+}
 /* common */
 .font-size-12{
     font-size: 12px;
 }
 
+.bg-grey{
+    background-color: #E5E5E5;
+}
+.width-50{
+    width: 50px;
+}
+.width-120{
+    width: 120px;
+}
 .ai-center{
     display: flex;
     align-items: center;
@@ -43,5 +54,14 @@ main{
     }
     .sidebar{
         width: 50px;
+    }
+    .logo{
+        display: none;
+    }
+    .logo-mobile{
+        display: block;
+    }
+    .header-end{
+        display: none;
     }
 }
